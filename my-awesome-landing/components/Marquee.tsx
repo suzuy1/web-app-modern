@@ -1,9 +1,9 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
-const marqueeVariants = {
+const marqueeVariants: Variants = {
   animate: {
-    x: [0, -1000], // Sesuaikan dengan panjang teks
+    x: [0, -1000],
     transition: {
       x: {
         repeat: Infinity,

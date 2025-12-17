@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 interface Props {
   text: string;
@@ -10,7 +10,7 @@ export default function RevealText({ text, className }: Props) {
   // Memecah teks menjadi kata-kata agar bisa muncul satu per satu (staggered)
   const words = text.split(" ");
 
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
@@ -18,7 +18,7 @@ export default function RevealText({ text, className }: Props) {
     }),
   };
 
-  const child = {
+  const child: Variants = {
     visible: {
       opacity: 1,
       y: 0,
