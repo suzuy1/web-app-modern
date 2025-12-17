@@ -1,21 +1,23 @@
 "use client";
 import CinematicHero from "@/components/CinematicHero";
+import CTA from "@/components/CTA";
 import FAQ from "@/components/FAQ";
 import FeatureCard from "@/components/FeatureCard";
 import FloatingStats from "@/components/FloatingStats";
 import Footer from "@/components/Footer";
 import ImageReveal from "@/components/ImageReveal";
 import Marquee from "@/components/Marquee";
+import ProcessSteps from "@/components/ProcessSteps";
 import ProjectCard from "@/components/ProjectCard";
 import Testimonials from "@/components/Testimonials";
 import { motion } from "framer-motion";
 import { FiCloudLightning, FiCode, FiLayers, FiShield } from "react-icons/fi";
 
 const FEATURES = [
-  { title: "Fast Performance", desc: "Optimized for speed and SEO out of the box.", icon: <FiCloudLightning size={24} /> },
-  { title: "Clean Code", desc: "Built with the latest standards of React & Next.js.", icon: <FiCode size={24} /> },
-  { title: "Layered Design", desc: "Complex visual layers for a deep immersive feel.", icon: <FiLayers size={24} /> },
-  { title: "Secure by Default", desc: "Enterprise grade security for your modern apps.", icon: <FiShield size={24} /> },
+  { title: "Lightning Fast", desc: "Optimized performance for instant load times and better SEO.", icon: <FiCloudLightning size={24} /> },
+  { title: "Future-Proof", desc: "Scalable architecture engineered to grow with your business.", icon: <FiCode size={24} /> },
+  { title: "Immersive UX", desc: "Fluid animations and depth that captivate your audience.", icon: <FiLayers size={24} /> },
+  { title: "Enterprise Security", desc: "Bank-grade protection for your data and users.", icon: <FiShield size={24} /> },
 ];
 
 const PROJECTS = [
@@ -86,7 +88,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. Image Reveal - Masking Scroll */}
+      {/* 5. The Blueprint - Horizontal Scroll Process */}
+      <ProcessSteps />
+
+      {/* 6. Image Reveal - Masking Scroll */}
       <ImageReveal />
 
       {/* 6. Project Gallery - Hover Zoom */}
@@ -111,8 +116,12 @@ export default function Home() {
       {/* 7. Testimonials - Draggable */}
       <Testimonials />
 
-      {/* 8. FAQ & Footer */}
+      {/* 8. FAQ - Interactive Grid */}
       <FAQ />
+
+      {/* 9. CTA - Magnetic & Massive */}
+      <CTA />
+      
       <Footer />
     </main>
   );

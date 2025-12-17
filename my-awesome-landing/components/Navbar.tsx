@@ -2,8 +2,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
-import ThemeToggle from "./ThemeToggle";
-
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -60,8 +58,7 @@ export default function Navbar() {
 
         {/* Right Side Actions */}
         <div className="flex items-center gap-2 md:gap-4">
-          {/* Theme Toggle */}
-          <ThemeToggle />
+          {/* Theme Toggle Removed */}
           
           {/* Mobile Menu Button */}
           <button 

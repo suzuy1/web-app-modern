@@ -10,7 +10,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-gray-500 dark:text-gray-400 max-w-sm leading-relaxed">
-            Membangun pengalaman digital yang tidak terlupakan melalui desain inovatif dan teknologi mutakhir.
+            Crafting unforgettable digital experiences through innovative design and cutting-edge technology.
           </p>
         </div>
         
@@ -36,7 +36,7 @@ export default function Footer() {
       </div>
       
       <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-black/5 dark:border-white/5 text-center text-xs text-gray-400">
-        © 2025 Lumina Studio. All rights reserved. Built with Gabut Power ⚡
+        © 2025 Lumina Studio. All rights reserved.
       </div>
     </footer>
   );

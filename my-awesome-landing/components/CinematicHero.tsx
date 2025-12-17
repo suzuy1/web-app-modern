@@ -55,7 +55,7 @@ export default function CinematicHero() {
           transition={{ delay: 0.5 }}
           className="max-w-2xl mx-auto text-gray-400 text-base sm:text-lg md:text-xl mb-8 md:mb-10 leading-relaxed px-4"
         >
-          Membangun pengalaman digital yang tidak hanya indah, tetapi juga bermakna dan berdampak.
+Building digital experiences that are not just beautiful, but meaningful and impactful.
         </motion.p>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mt-8 md:mt-12 px-4">
